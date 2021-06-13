@@ -112,11 +112,11 @@ completed()"""
        real part with imaginary part (6 + 0j) 6 -> real part 0 is a imaginary part
        
 """
-output()
+"""output()
 a=complex(input("ENTER THE COMPLEX VALUE :"))
 print(a)
 print(type(a))
-completed()
+completed()"""
 #________ OUTPUT-1 _________
 """ENTER THE COMPLEX VALUE :6j
 #6j
