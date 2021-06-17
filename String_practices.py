@@ -100,9 +100,44 @@ completed()"""
 ###########
 
 #7. VERIFY STRING EXIST OR NOT:
-
+"""output()
 s = "orange"
 print("orange" in "This is orange juice" )
+completed()"""
+#________ OUTPUT _________
+#True
+#--------------------------------x--------------------------------------
 
-#
+# TESTING
+"""strings="The lyrics is not that poor!"
+s1=strings.find("not")
+s2=strings.find("poor")
+print(s1)
+print(s2)"""
+
+# EXAMPLE-1 CODE TEST ONLINE
+"""def not_poor(str1,re_string):
+    find_str = str1.find(re_string)
+    last_str = len(str1)
+    if find_str >= 0:
+        str1 = str1.replace(str1[find_str:(last_str-1)], 'good')
+        return str1
+    else:
+        return str1
+print(not_poor('The lyrics is poor but not that much of poor!',"poor"))
+print(not_poor('The lyrics is poor!',"poor"))"""
+
+# UNDERSTANDING BASED THIS EXAMPLE-1
+"""FIND THE STRING INDEX NUMBER AND SLICING THE STRING AND REPLACE STRING USE replace()"""
+# CODE
+"""def not_poor(str1):
+    #snot = str1.find('not') ==>14
+    #spoor = str1.find('poor') ==>23
+    if 23 > 14 and 14 > 0 and 23 > 0:
+        str1 = str1.replace(str1[14:(23 + 4)], 'good')
+        return str1
+    else:
+        return str1
+print(not_poor('The lyrics is not that poor!'))
+print(not_poor('The lyrics is poor!'))"""
 
