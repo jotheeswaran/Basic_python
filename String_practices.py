@@ -165,15 +165,104 @@ completed()"""
         sum=(sum*10)+r
         n=n/10
 """
+"""output()
 num = 151
+temp= num
 sum=0
 while (num>0):
     r=num%10
     sum=(sum*10)+r
-    num=num/10
-if num == sum:
+    num=num//10
+if temp == sum:
     print("Polyndrome number")
 else:
     print("not polyndrome")
+completed()"""
+#________ OUTPUT _________
+#Polyndrome number
+#--------------------------------x--------------------------------------
 
-#
+# LEARNING-1 Python program to check whether the string is Symmetrical or Palindrome
+"""if 7%2: # if value not 0 if condition is pass print inside if condition, if value is 0 call else block 
+    print("True")
+else:
+    print("false")"""
+
+#9. FIND STRING SYMMETRIC OR NOT
+    # LOGIC:
+        #STRING INPUT DIVIDE THE HALF USING LENTH OF STRING STORE THE VARIABLE
+        #COMPARE THE FIRST HALF AND SECOND HALF IF EQUAL EACH WORD FIRST TO LAST THAT IS SYMMETRIC
+"""output()
+str1 = "khokho"
+n=len(str1)
+first_half = 0
+mid=n//2
+second_half=mid
+flag=0
+while(first_half<second_half and second_half<n):
+    if (str1[first_half] == str1[second_half]):
+        first_half += 1
+        second_half += 1
+    else:
+        flag = 1
+        break
+if flag == 1:
+    print("this is not symetric")
+else:
+    print("symmetric")
+completed()"""
+#________ OUTPUT _________
+#symmetric
+#--------------------------------x--------------------------------------
+
+#10. Reverse words in a given String in Python
+
+"""str1 = "geeks quiz practice code"
+str2= ""
+l1=str1.split(' ')
+l2=[]
+for i in range(len(l1)-1,-1,-1):
+    l2.append(l1[i])
+    str2 = ' '.join(l2)
+print(str2)"""
+#________ OUTPUT _________
+#code practice quiz geeks
+#--------------------------------x--------------------------------------
+
+#10.1 SAME THING USED REVERSE FUNCTION
+"""output()
+str1 = "geeks quiz practice code"
+w=str1.split(' ')
+str2=' '.join(reversed(w))
+print(str2)
+completed()"""
+#________ OUTPUT _________
+#code practice quiz geeks
+#--------------------------------x--------------------------------------
+
+#11. Ways to remove 'i' character from string in Python
+
+#11.1 WAY OF ONE CHARACTOR OR WORD
+"""output()
+a="string"
+l=a.split('i')
+o=''.join(l)
+print(o)
+completed()"""
+#________ OUTPUT _________
+#strng
+#--------------------------------x--------------------------------------
+
+#11.2 WAY OF TWO REMOVE CHARACTOR USING INDEX VALUE:
+
+# LEARNING:
+"""output()
+a="string"
+b=list(a) # convert the list after convert to string
+c=''.join(b)
+print(c)
+completed()"""
+#________ OUTPUT _________
+#string
+#--------------------------------x--------------------------------------
+
