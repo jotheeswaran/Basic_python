@@ -141,3 +141,39 @@ print(not_poor('The lyrics is poor!',"poor"))"""
 print(not_poor('The lyrics is not that poor!'))
 print(not_poor('The lyrics is poor!'))"""
 
+#8. PRACTICE STRING INTERVIEW QUESTION:
+
+# LEARNING-1  CHECKING STRING VALUE IS POLYNDROME OR NOT
+"""output()
+str1="MADAM"
+l=len(str1)
+s=""
+for i in range(l-1,-1,-1): # Reverse the value using range function
+    s+=str1[i]
+if s == str1:
+    print("It is polyndrome")
+else:
+    print("It is symmetric")
+completed()"""
+#________ OUTPUT _________
+#It is polyndrome
+#--------------------------------x--------------------------------------
+
+# LEARNING-2 CHECKING NUMBER IS POLYNDROME OR NOT
+"""LOGIC :
+        r=n%10
+        sum=(sum*10)+r
+        n=n/10
+"""
+num = 151
+sum=0
+while (num>0):
+    r=num%10
+    sum=(sum*10)+r
+    num=num/10
+if num == sum:
+    print("Polyndrome number")
+else:
+    print("not polyndrome")
+
+#
