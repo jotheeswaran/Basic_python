@@ -266,3 +266,26 @@ completed()"""
 #string
 #--------------------------------x--------------------------------------
 
+
+
+#12. PRACTICE STRING FUNCTIONS:
+
+#F1- CAPITALIZE()
+
+s="string"
+msg="this is the best of my life"
+CAPS="STRINGS"
+output()
+#print(s.capitalize())  # Converts the first character to upper case
+#________ OUTPUT _________
+#String
+#========== NOTE =============
+"""if i give first letter # capitalize() should not works"""
+
+#print(CAPS.casefold())
+#________ OUTPUT _________
+#strings
+print(s.center(8,'#')) #Returns a centered string
+#________ OUTPUT _________
+#######string#######
+"""SYNTAX- string.center(length, character)"""
