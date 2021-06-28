@@ -266,13 +266,9 @@ completed()"""
 #string
 #--------------------------------x--------------------------------------
 
-
-
 #12. PRACTICE STRING FUNCTIONS:
 
-#F1- CAPITALIZE()
-
-s="string"
+s="string."
 msg="this is the best of my life"
 CAPS="STRINGS"
 output()
@@ -285,7 +281,48 @@ output()
 #print(CAPS.casefold())
 #________ OUTPUT _________
 #strings
-print(s.center(8,'#')) #Returns a centered string
+
+#print(s.center(8,'#')) #Returns a centered string
 #________ OUTPUT _________
 #######string#######
-"""SYNTAX- string.center(length, character)"""
+"""SYNTAX- string.center(length, character)
+    GIVE LENGTH VALUE, ABOVE LENGTH OF STRING INPUT
+"""
+
+#print(msg.count('this'))  # Returns the number of times a specified value occurs in a string
+#________ OUTPUT _________
+#1
+
+#print(s.encode()) # The encode() method encodes the string, using the specified encoding. If no encoding is specified, UTF-8 will be used.
+#a=s.encode()
+#print(a.decode()) # Decode the binary string
+
+#print(msg.endswith('life')) # find the string end of value using this function
+#________ OUTPUT _________
+#True
+
+#print(s.expandtabs(5))  # tab space use \t The expandtabs() method sets the tab size to the specified number of whitespaces.
+#________ OUTPUT _________
+#s    tring.
+
+#print(msg.find('life')) # Searches the string return the position of index value
+#________ OUTPUT _________
+# Index value 'life'--> 23
+
+#print("this is {} life".format("worst"))
+#________ OUTPUT _________
+#this is worst life
+
+#print("this is {x} life".format(x="worst"))
+#________ OUTPUT _________
+#this is worst life
+
+#a="""NOTE: single line only we can print in {x} quotes(")
+#and {y} quotes(') but we cannot print multi line
+#if we need to {a} print use {z} quotes(\""").
+#"""
+#print(a.format(a='multiline',y='single',x='double',z='trible'))  # why using key using this type pairing only
+#________ OUTPUT _________
+#NOTE: single line only we can print in double quotes(")
+#and single quotes(') but we cannot print multi line
+#if we need to multiline print use trible quotes(""").
