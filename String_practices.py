@@ -10,7 +10,7 @@ def Note():
     print("#========== NOTE =============")
 
 
-#1. PRINT STRING USINF print():
+#1. PRINT STRING USING print():
 """output()
 print("Hello")
 print('jotheeswaran')
@@ -290,16 +290,46 @@ output()
 """
 
 #print(msg.count('this'))  # Returns the number of times a specified value occurs in a string
+# SYNTAX --> string.count(value, start, end)
+#________ OUTPUT _________
+#1
+
+#print(msg.count('best',10,16))
+""" 
+value -	Required. A String. The string to value to search for
+start -	Optional. An Integer. The position to start the search. Default is 0
+end - Optional. An Integer. The position to end the search. Default is the end of the string
+"""
 #________ OUTPUT _________
 #1
 
 #print(s.encode()) # The encode() method encodes the string, using the specified encoding. If no encoding is specified, UTF-8 will be used.
+# SYNTAX --> string.encode(encoding=encoding, errors=errors)
+""" encoding-> Optional. A String specifying the encoding to use. Default is UTF-8
+    errors-> Optional. A String specifying the error method. Legal values are:
+            'backslashreplace'	- uses a backslash instead of the character that could not be encoded
+            'ignore'	- ignores the characters that cannot be encoded
+            'namereplace'	- replaces the character with a text explaining the character
+            'strict'	- Default, raises an error on failure
+            'replace'	- replaces the character with a questionmark
+            'xmlcharrefreplace'	- replaces the character with an xml character
+"""
 #a=s.encode()
 #print(a.decode()) # Decode the binary string
+"""txt = "My name is Ståle"
+print(txt.encode(encoding='ascii',errors='backslashreplace'))
+print(txt.encode(encoding='ascii',errors='ignore'))
+print(txt.encode(encoding='ascii',errors='namereplace'))
+print(txt.encode(encoding='ascii',errors='replace'))
+print(txt.encode(encoding='ascii',errors='xmlcharrefreplace'))"""
 
 #print(msg.endswith('life')) # find the string end of value using this function
 #________ OUTPUT _________
 #True
+
+#print(msg.endswith('life',20,27))
+#________ OUTPUT _________
+#False
 
 #print(s.expandtabs(5))  # tab space use \t The expandtabs() method sets the tab size to the specified number of whitespaces.
 #________ OUTPUT _________
