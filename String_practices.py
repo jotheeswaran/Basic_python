@@ -326,3 +326,29 @@ output()
 #NOTE: single line only we can print in double quotes(")
 #and single quotes(') but we cannot print multi line
 #if we need to multiline print use trible quotes(""").
+
+#p={'x':4,'y':3}
+#print("{x} to {y} welcome of you".format(**p))
+#print("{x} {y}".format_map(p)) # only use dict value used in format map function
+#Formats specified values in a string
+""" l=['4','3','2','1']
+print("{l[0]} {l[1]} {l[2]}".format_map(l)) # we cannot use list value in format_map function
+ Note error: Traceback (most recent call last):
+  File "/media/jothishr/PROJECTS_STUDY_PURPOSE/studied videos/python_practices/Basic_python/String_practices.py", line 334, in <module>
+    print("{l[0]} {l[1]} {l[2]}".format_map(l))
+TypeError: list indices must be integers or slices, not str
+"""
+
+"""print(s.index('i'))
+#________ OUTPUT _________
+3
+print(msg.index('l',20,27)) # search index value start to end value
+#________ OUTPUT _________
+23
+ SYNTAX : string.index(value, start, end) 
+
+value - Required. The value to search for
+start - Optional. Where to start the search. Default is 0
+end - Optional. Where to end the search. Default is to the end of the string
+
+"""
