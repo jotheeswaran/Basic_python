@@ -341,14 +341,21 @@ TypeError: list indices must be integers or slices, not str
 
 """print(s.index('i'))
 #________ OUTPUT _________
-3
-print(msg.index('l',20,27)) # search index value start to end value
+3 -->index value of string
+print(msg.index('l',20,27)) # search index value to particular range
 #________ OUTPUT _________
-23
+23 -->-->index value of string
  SYNTAX : string.index(value, start, end) 
 
 value - Required. The value to search for
 start - Optional. Where to start the search. Default is 0
 end - Optional. Where to end the search. Default is to the end of the string
-
 """
+a="str12"
+b="welcome"
+#print(a)
+#print(a.isalnum()) # Returns True if all the characters are alphanumeric, meaning alphabet letter (a-z) and numbers (0-9).
+
+#print(b.isalpha()) # Returns True if all the characters are alphabet letters (a-z).
+
+#print()
