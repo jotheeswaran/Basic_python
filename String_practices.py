@@ -383,9 +383,76 @@ end - Optional. Where to end the search. Default is to the end of the string
 """
 a="str12"
 b="welcome"
+txt="\u0033"
 #print(a)
+# its return boolean value only
 #print(a.isalnum()) # Returns True if all the characters are alphanumeric, meaning alphabet letter (a-z) and numbers (0-9).
 
 #print(b.isalpha()) # Returns True if all the characters are alphabet letters (a-z).
 
-#print()
+#print(txt.isdecimal()) #  returns True if all the characters are decimals (0-9).This method is used on unicode objects.
+
+#val='58000'
+#print(val.isdigit()) # Returns to true or false if value is digit
+#print(val.isnumeric()) # Returns to true or false if value is digit
+#________ OUTPUT _________
+#True
+
+#ident="Str" # contains alphanumeric letters (a-z) and (0-9), or underscores (_). A valid identifier cannot start with a number, or contain any spaces
+#print(ident.isidentifier())# returns True if the string is a valid identifier, otherwise False.
+#________ OUTPUT _________
+#True
+
+#g= "Its works with enable"
+#print(g.islower()) # Returns True if all characters in the string are lower case
+#________ OUTPUT _________
+#False
+
+#a="$" #its return true or false if be printable value
+#print(a.isprintable())
+#________ OUTPUT _________
+#True
+
+#b="This value is find space is there or not"
+#c=" "
+#print(b.isspace())
+#________ OUTPUT _________
+#False
+#print(c.isspace())
+#________ OUTPUT _________
+#True
+
+#print(CAPS.isupper()) # returns True if all the characters are in upper case
+#print(s.isupper())
+#________ OUTPUT _________
+#True
+#False
+#l=['s','t','r','i','n','g']
+#print("".join(l)) # Joins the elements of an iterable(list,tuple) and (dict,set) to the end of the string
+#________ OUTPUT _________
+#string
+#d={'set':'dict','list':'tuple'} # if we have dict means only join key only
+#print(" ".join(d))
+#s={'a','b','c','d'}
+#print("".join(s))
+
+#print(s.ljust(10,'1')) #The ljust() method will left align the string, using a specified character (space is default) as the fill character.
+""" SYNTAX: string.ljust(length, character)
+    length --> Required. The length of the returned string
+    character --> Optional. A character to fill the missing space (to the right of the string). Default is " " (space).
+"""
+#________ OUTPUT _________
+#string.111
+
+"""content= "Length of the RETURNED STRING VALUE TrUe"
+#print(content.lower())
+#________ OUTPUT _________
+#length of the returned string
+splt=content.split(" ")
+for i in splt:
+    if i.isupper():
+        print(i," yes i'm caps letter word")
+    else:
+        continue"""
+
+
